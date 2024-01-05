@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Spectral+SC:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="catalogStyle.css">
+    <link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick-1.8.1/slick/slick.css"/>
+   <link rel="stylesheet" href="/slick-1.8.1/slick-1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+   
+</head>
+<body>
+     <!-- home page -->
+     <div class="main_container">
+        <header>
+            <!-- контактна інфо стрічка -->
+            <div class="contact_info_line grid">
+                <div class="number-header">
+                    <a  class="contact-header" href="tel:+38067788909">
+                        <img src="/images/carbon_phone-voice-filled.png" alt="phone_icon" style="max-width:14px;">
+                        <p>+38067788909</p>
+                    </a>
+                    
+                </div>
+                <div>
+                    <a href="#location"><img src="/images/Group.png" alt="location_icon" style="max-width: 10px;"></a>
+                    <p class="location-header">м. Київ, вул. Визволення 9, ТЦ "Dream Town", перший поверх</p>
+                </div>
+                <div class="work-time">
+                    <a href="#work-time"><img src="/images/ic_round-access-time-filled.png" alt="time_icon" style="max-width: 15px;"></a>
+                    <p>Пн-Сб 09:00-18:00</p>
+                </div>
+            </div>
+            <!-- навігація -->
+            <nav class="nav-header grid " id="nav-header">
+                <!-- ліва половина -->
+                <div class="menu-left-container">
+                    <a  class="menu-icon" href=""><img id="menuIcon" src="/images/nav/menu_bar.svg" alt="menu-icon"></a>
+                    <div class="popup-wrapper">
+                        <div class="popup">
+                            <div class="popup-close"><img src="/images/nav/popup-close.svg" alt=""></div>
+                            <div class="popup-content ">
+                                <ul class="nav-header-ul menu-option ">
+                                    <li class="catalogparent">
+                                        <a href="#">Каталог</a>
+                                        <ul class="catalogUL hidden" >
+                                             <li><a href="http://127.0.0.1:5500/item.html">Макраме</a></li>
+                                             <li><a href="">В'язання</a></li>
+                                             <li><a href="">Вишивка</a></li>
+                                             <li><a href="">Ліпнина</a></li>
+                                             <li><a href="">Інструменти</a></li>
+                                             <li><a href="">Упаковка</a></li>
+                                             <li><a href="">Творчість</a></li>
+                                             <li><a href="">Книги</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">Оплата і доставка</a></li>
+                                    <li><a href="">Бонусна програма</a></li>
+                                    <li><a href="">Про компанію</a></li>
+                                    <li><a href="">Контакти</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-option-wrapper">
+                        <ul class="menu-left-side">
+                            <li class="catalogDesktop"><a href="">Каталог</a>
+                                <ul class="catalogDesktop-ul" >
+                                    <li><a href="http://127.0.0.1:5500/item.html">Макраме</a></li>
+                                    <li><a href="">В'язання</a></li>
+                                    <li><a href="">Вишивка</a></li>
+                                    <li><a href="">Ліпнина</a></li>
+                                    <li><a href="">Інструменти</a></li>
+                                    <li><a href="">Упаковка</a></li>
+                                    <li><a href="">Творчість</a></li>
+                                    <li><a href="">Книги</a></li>
+                               </ul></li>
+                            <li><a href="">Оплата і доставка</a></li>
+                            <li><a href="">Бонусна програма</a></li>
+                            <li><a href="">Про компанію</a></li>
+                            <li><a href="">Контакти</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- центр лого -->
+                <div class="nav_logo"><img src="/images/Хобби Арт 4 1.png" alt="logo"></div>
+                <!-- права половина -->
+                <div class="menu-right-container">
+                    <!-- права половина малий екран -->
+                    <ul class="nav-icons">
+                        <!-- <div class="bar"></div> -->
+                        <li class="nav-li search-input">
+    
+                            <a  href="#" class="icon search-atag-nav"><img src="/images/Group.svg" alt="search icon"><p class="text">Пошук товару</p></a>
+                           <div class="search-wrapper">
+                            <div class="search-popup">
+                                
+                                <div class="search-popup-content ">
+                                    <form action=""  id="search-nav-small">
+                                        <input  id="search-field-small" type="text" placeholder="Пошук товару">
+                                        <img src="/images/Group.svg" alt="saved items">
+                                    </form>
+                                    
+                                </div>
+                                <div class="search-popup-close"><img  id="search-close-img" src="/images/nav/popup-close.svg" alt=""></div>
+                            </div>
+                                                        
+                           </div>
+                            <form action="" class="search-nav">
+                                <input class="search-field" type="text" placeholder="Пошук товару">
+                                <img src="/images/Group.svg" alt="saved items">
+                            </form>
+                            <div class="searchOptions "></div>
+                        </li>
+                        <li class="nav-li fullScreenNav">
+                            <a  href="" class="icon"href=""><img src="/images/nav/bi_person-fill.svg" alt="sing in"><p class="text">Увійти</p></a>
+                          
+                        </li>
+                        <li class="nav-li fullScreenNav">
+                            <a class="icon"href=""><img src="/images/nav/clarity_heart-solid.svg" alt="saved items"><p class="text">Збережене</p></a>
+                            <div class="num-item-heart"><p></p></div>
+                        </li>
+                        <li class="nav-li basket-num fullScreenNav">
+                           
+                            <a class="icon"href="http://127.0.0.1:5500/mybasket.html"><img src="images/nav/teenyicons_basket-solid.svg" alt="basket"><p class="text">Корзина</p></a>
+                           
+                            <div class="num-item"></div>
+                        </li>
+                        
+                    </ul>
+                   
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!--банер заг білий -->
+            <div class="container-baner">
+                <!-- контейнер бекграунд зелений-->
+                <div class="baner">
+                    <img src="/images/baner/Group 13.png"  class="baner-image-main" alt="main-photo" >
+                    <img src="/images/baner/Vector-top.svg" class="vector-top" alt="">
+                    <img src="/images/baner/Vector=bottom.svg" class="vector-bottom" alt="">
+                    <img src="/images/baner/Linked Path Group.svg"  class="season-hit" alt="">
+                    <img src="/images/baner/arrow.svg" class="arrow" alt="">
+                    <h1>ПРЯЖА MACRAMETR</h1>
+                    <p class="baner-text">Повсякденна практика показує, що зміцнення та розвиток внутрішньої структури забезпечує широкому колу (фахівців) участь у формуванні форм впливу.</p>
+                    <a href="" class="button baner-btn">В КАТАЛОГ</a>
+                    <div class="arrow-btn">
+                        <img src="/images/baner/arrow-left-small.svg" alt="arrow-left">
+                        <p >1 / 5</p>
+                        <img src="/images/baner/arrow-right-small.svg" alt="arrow-right">
+                    </div>
+                </div> 
+                <section class="">
+                    <!-- ціна навіг -->
+                    <div class="catalog-nav">
+                        <div class="cat-nav">
+                            <a href="http://127.0.0.1:5500/index.html">Головна</a><img src="/images/page catalog/Arrow side.svg" alt="arrow">
+                            <p>Каталог</p><img src="/images/page catalog/Arrow side.svg" alt="arrow">
+                            <p>Макраме</p>
+                        </div>
+                        <div class="price-container ">
+                            <div class ="btn-white price pr-fromLow"><p class="priceTxt">Ціна</p><img src="/images/page catalog/Arrow down.svg" alt=""></div>
+                            <div class ="btn-white price pr-fromHigh"><p class="priceTxt">Ціна</p><img src="/images/page catalog/Arrow up.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <!-- основна частина каталогу -->
+                    <div class="cat-container">
+                        <!-- фільтр -->
+                        
+                        <aside>
+                            <div class="filter ">
+                                <a class="button" href="#">Фільтр</a>
+                            </div>
+                            <form id="filterItems" class="cat-filter-small cat-filter-big" action="">
+                                <div class="filter-type">
+                                    <h4>Тип виробу</h4>
+                                    <div>
+                                        <input type="checkbox" value="Шпагат" id="">
+                                        <label for="">Шпагат</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox"  value="Пряжа" id="">
+                                        <label for="">Пряжа</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="" value="джгут" id="">
+                                        <label for="">Джгут</label>
+                                    </div>
+                                    
+                                </div>
+                                <div class="line"></div>
+                                <div class="filter-type">
+                                    <h4>Довжина</h4>
+                                    <div>
+                                        <input type="checkbox" name="" value="50м" id="">
+                                        <label for="">50м</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="" value="100м" id="">
+                                        <label for="">100м</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="" value="500м"  id="">
+                                        <label for="">500м</label>
+                                    </div>
+                                    
+                                </div>
+                                <div class="line"></div>
+                                <div class="filter-type">
+                                    <h4>Діаметр</h4>
+                                    <div>
+                                        <input type="checkbox" name="" value="4мм" id="">
+                                        <label for="">4мм</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="" value="5мм" id="">
+                                        <label for="">5мм</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="" value="6мм" id="">
+                                        <label for="">6мм</label>
+                                    </div>
+                                    
+                                </div>
+                                <div class="line"></div>
+                                <div class="filter-type">
+                                    <h4>Виробник</h4>
+                                    <div>
+                                        <input type="checkbox" name="" value="Macrame" id="">
+                                        <label for="">Macrame</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="" value="Зефірка" id="">
+                                        <label for="">Зефірка</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="" value="Gamma" id="">
+                                        <label for="">Gamma</label>
+                                    </div>
+                                    
+                                </div>
+                                <input   id="filterItemsBtn" class="button" type="submit" value="Показати">
+                                <input  id="resetFilter" type="submit" value="Очистити">
+                                <p>Підібрано <span class="numberOfFilteredItems"></span> товар<span class="ending"></span></p>
+                            </form>
+                        </aside>
+                        <!-- вироби -->
+                        <div class="cat-items-container">
+                            <ul class="cat-items-ul">
+                                <li>
+                                    
+                                    <a class="heart-icon" href=""><img src="/images/page catalog/Vector (1).png" alt="heart"></a>
+                                    <a class="item-img" href=""><img src="/images/page catalog/image 11.png" alt="macrame"></a>
+                                    <p class="title-catalog">Шпагат Macrametr 4мм, 100 ниток, <span>зелений</span></p>
+                                    <div>
+                                        <ul class="cat-colors">
+                                            <li><a class="defined-color" data-color="green" href=""><span><img src="/images/page catalog/color dots/Ellipse 52.png" alt=""></span></a></li>
+                                            <li><a data-color ="brown" href=""><span><img src="/images/page catalog/color dots/Ellipse 53.png" alt=""></span></a></li>
+                                            <li><a data-color="beige" href=""><span><img src="/images/page catalog/color dots/Ellipse 54.png" alt=""></span></a></li>
+                                            <li><a data-color="yellow" href=""><span><img src="/images/page catalog/color dots/Ellipse 55.png" alt=""></span></a></li>
+                                            <li><a data-color="number" href=""><span>+3</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="priceTxt">
+                                        <p class="oldPrice"><span>12</span> ₴</p>
+                                        <p class="newPrice"><span>13</span> ₴</p>
+                                    </div>
+                                    <button class="toBasket-catalog-btn btn-white" type="submit"><img src="/images/page catalog/teenyicons_basket-solid.png" alt="">В корзину</button>
+                                </li>
+                                <li>
+                                    <a class="heart-icon" href=""><img src="/images/page catalog/Vector (1).png" alt="heart"></a>
+                                    <a class="item-img" href=""><img src="/images/page catalog/1.3 2.png" alt="джгут"></a>
+                                    <p class="title-catalog" >Шпагат джгутовий 500м <span>зелений</span></p>
+                                    <div>
+                                        <ul class="cat-colors">
+                                            <li><a class="defined-color" data-color="green" href=""><span><img src="/images/page catalog/color dots/Ellipse 52.png" alt=""></span></a></li>
+                                            <li><a data-color ="brown" href=""><span><img src="/images/page catalog/color dots/Ellipse 53.png" alt=""></span></a></li>
+                                            <li><a data-color="beige" href=""><span><img src="/images/page catalog/color dots/Ellipse 54.png" alt=""></span></a></li>
+                                            <li><a data-color="yellow" href=""><span><img src="/images/page catalog/color dots/Ellipse 55.png" alt=""></span></a></li>
+                                            <li><a data-color="number" href=""><span>+3</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="priceTxt">
+                                        <p class="oldPrice"><span>34</span> ₴</p>
+                                        <p class="newPrice"><span></span> ₴</p>
+                                    </div>
+                                    <button class="toBasket-catalog-btn btn-white" type="submit"><img src="/images/page catalog/teenyicons_basket-solid.png" alt="">В корзину</button>
+                                </li>
+                                <li>
+                                    <a class="heart-icon" href=""><img src="/images/page catalog/Vector (1).png" alt="heart"></a>
+                                    <a class="item-img" href=""><img src="/images/page catalog/1 13.png" alt="macrame"></a>
+                                    <p class="title-catalog" >Пряжа Arachna "Macrame MAXI" 100м <span>зелений</span></p>
+                                    <div>
+                                        <ul class="cat-colors">
+                                            <li><a class="defined-color" data-color="green" href=""><span><img src="/images/page catalog/color dots/Ellipse 52.png" alt=""></span></a></li>
+                                            <li><a data-color ="brown" href=""><span><img src="/images/page catalog/color dots/Ellipse 53.png" alt=""></span></a></li>
+                                            <li><a data-color="beige" href=""><span><img src="/images/page catalog/color dots/Ellipse 54.png" alt=""></span></a></li>
+                                            <li><a data-color="yellow" href=""><span><img src="/images/page catalog/color dots/Ellipse 55.png" alt=""></span></a></li>
+                                            <li><a data-color="number" href=""><span>+3</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="priceTxt">
+                                        <p class="oldPrice"><span>22</span> ₴</p>
+                                        <p class="newPrice"><span></span> ₴</p>
+                                    </div>
+                                    <button class="toBasket-catalog-btn btn-white" type="submit"><img src="/images/page catalog/teenyicons_basket-solid.png" alt="">В корзину</button>
+                                </li>
+                                <li>
+                                    <a class="heart-icon" href=""><img src="/images/page catalog/Vector (1).png" alt="heart"></a>
+                                    <a class="item-img" href=""><img src="/images/page catalog/image 12.png" alt="macrame"></a>
+                                    <p class="title-catalog" >Шнур "Gamma" 0.8 мм, 50м <span>зелений</span></p>
+                                    <div>
+                                        <ul class="cat-colors">
+                                            <li><a class="defined-color" data-color="green" href=""><span><img src="/images/page catalog/color dots/Ellipse 52.png" alt=""></span></a></li>
+                                            <li><a data-color ="brown" href=""><span><img src="/images/page catalog/color dots/Ellipse 53.png" alt=""></span></a></li>
+                                            <li><a data-color="beige" href=""><span><img src="/images/page catalog/color dots/Ellipse 54.png" alt=""></span></a></li>
+                                            <li><a data-color="yellow" href=""><span><img src="/images/page catalog/color dots/Ellipse 55.png" alt=""></span></a></li>
+                                            <li><a data-color="number" href=""><span>+3</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="priceTxt">
+                                        <p class="oldPrice"><span>44</span> ₴</p>
+                                        <p class="newPrice"><span></span> ₴</p>
+                                    </div>
+                                    <button class="toBasket-catalog-btn btn-white" type="submit"><img src="/images/page catalog/teenyicons_basket-solid.png" alt="">В корзину</button>
+                                </li>
+                                <li>
+                                    <a class="heart-icon" href=""><img src="/images/page catalog/Vector (1).png" alt="heart"></a>
+                                    <a class="item-img" href=""><img src="/images/page catalog/1.1 1.png" alt="macrame"></a>
+                                    <p class="title-catalog" >Пряжа Arachna "Macrame MINI" <span>зелений</span></p>
+                                    <div>
+                                        <ul class="cat-colors">
+                                            <li><a class="defined-color" data-color="green" href=""><span><img src="/images/page catalog/color dots/Ellipse 52.png" alt=""></span></a></li>
+                                            <li><a data-color ="brown" href=""><span><img src="/images/page catalog/color dots/Ellipse 53.png" alt=""></span></a></li>
+                                            <li><a data-color="beige" href=""><span><img src="/images/page catalog/color dots/Ellipse 54.png" alt=""></span></a></li>
+                                            <li><a data-color="yellow" href=""><span><img src="/images/page catalog/color dots/Ellipse 55.png" alt=""></span></a></li>
+                                            <li><a data-color="number" href=""><span>+3</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="priceTxt">
+                                        <p class="oldPrice"><span>11</span> ₴</p>
+                                        <p class="newPrice"><span></span> ₴</p>
+                                    </div>
+                                    <button class="toBasket-catalog-btn btn-white" type="submit"><img src="/images/page catalog/teenyicons_basket-solid.png" alt="">В корзину</button>
+                                </li>
+                                
+                                
+                                
+                            </ul>
+                        </div>
+
+                    </div> 
+                </section>
+            </div>   
+        </main>
+
+        
+        <footer class="grid ">
+            <div class="contact-info">
+                <div class="logo-fotter-container"><img class="logo-footer" src="/images/Хобби Арт 4 1.png" alt="logo"></div>
+                <div>
+                    <img src="/images/footer/carbon_phone-voice-filled.svg" alt="phone_icon" style="max-width:14px;">
+                    <p>  +38067788909</p>
+                </div>
+                <div id="location">
+                    <img src="/images/footer/Vector.svg" alt="location_icon" style="max-width: 10px;">
+                    <p>  м. Київ, вул. Визволення 9, ТЦ "Dream Town", перший поверх</p>
+                </div>
+                <div id="work-time">
+                    <img src="/images/footer/ic_round-access-time-filled.svg" alt="time_icon" style="max-width: 15px;">
+                    <p>  Пн-Сб 09:00-18:00</p>
+                </div>
+                <div>
+                    <img src="/images/footer/ri_instagram-fill.svg" alt="insta_icon" style="max-width: 15px;">
+                    <p>  @hobbyart_dv</p>
+                </div>
+            </div>
+            <div>
+                <ul class="contact-info">
+                    <li>
+                        <a href="">Каталог</a>
+                    </li>
+                    <li>
+                        <a href="">Акції</a>
+                    </li>
+                    <li>
+                        <a href="">Новинки</a>
+                    </li>
+                    <li>
+                        <a href="">Популярне</a>
+                    </li>
+                    <li>
+                        <a href="">Гарнтії і повернення</a>
+                    </li>
+                    <li>
+                        <a href="">Оплата і доставка</a>
+                    </li>
+                    <li>
+                        <a href="">Бонусна програма</a>
+                    </li>
+                    <li>
+                        <a href="">Про компанію</a>
+                    </li>
+                    <li>
+                        <a href="">Переваги</a>
+                    </li>
+                    <li>
+                        <a href="">Особистий кабінет</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <p style="font-weight: 600;">Дізнайтесь першим про акції та новинки</p>
+                <form id="form-email" action="">
+                    <input type="email" placeholder="Ваш email" class="email-footer">
+                    <input  class="button btn-footer" type="submit" value="Підписатись">
+                    <p class="pol-konfid">*натискаючи на кнопку Ви погоджуєтесь з політикою конфіденційності</p>
+                </form>
+                <p>© 2012-2021 ХОБІ АРТ — офіційний інтернет-магазин товарів для хобі. Всі права захищені. Умови використання та політика конфіденційності</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+    <script type="text/javascript" src="/slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script> 
+</body>
+</html>
